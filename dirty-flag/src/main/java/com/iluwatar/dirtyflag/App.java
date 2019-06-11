@@ -55,6 +55,7 @@ public class App {
 
     final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
     executorService.scheduleAtFixedRate(new Runnable() {
+
       @Override
       public void run() {
         final World world = new World();
